@@ -24,7 +24,7 @@ namespace SocketsClient
         private bool connected = false;
 
         private const int PORT = 100;
-
+        double gb = 1073741824;
 
         public MainWindow()
         {
@@ -217,8 +217,8 @@ namespace SocketsClient
         Func<ChartPoint, string> labelPoint = chartpoint => string.Format("{0} ({1:P})", chartpoint.Y, chartpoint.Participation);
         void Storages(List<Storage> List_storages) {
             list_storages.Clear();
-            list_storages.Add("Total Available Space");
-            list_storages.Add("Total used Space");
+            list_storages.Add("Total Available Space GB");
+            list_storages.Add("Total used Space GB");
             SeriesCollection series1 = new SeriesCollection();
             SeriesCollection series2 = new SeriesCollection();
             SeriesCollection series3 = new SeriesCollection();
@@ -226,12 +226,12 @@ namespace SocketsClient
             
             if (List_storages.Count()==1)
             {
-                series1.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { List_storages[0].TotalAvailableSpace }, DataLabels = true, LabelPoint = labelPoint });
+                series1.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { Math.Round((List_storages[0].TotalAvailableSpace / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart1.Series = series1;
-                series1.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { (List_storages[0].TotalSizeOfDrive - List_storages[0].TotalAvailableSpace) }, DataLabels = true, LabelPoint = labelPoint });
+                series1.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { Math.Round(((List_storages[0].TotalSizeOfDrive - List_storages[0].TotalAvailableSpace) / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart1.Series = series1;
                 txtstorage1.Text = "Disco: " + List_storages[0].RootDirectory;
-                
+
                 card1.Visibility=Visibility.Visible;
                 card2.Visibility = Visibility.Hidden;
                 card3.Visibility = Visibility.Hidden;
@@ -239,15 +239,15 @@ namespace SocketsClient
             }
             if (List_storages.Count() == 2)
             {
-                series1.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { List_storages[0].TotalAvailableSpace }, DataLabels = true, LabelPoint = labelPoint });
+                series1.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { Math.Round((List_storages[0].TotalAvailableSpace / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart1.Series = series1;
-                series1.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { (List_storages[0].TotalSizeOfDrive - List_storages[0].TotalAvailableSpace) }, DataLabels = true, LabelPoint = labelPoint });
+                series1.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { Math.Round(((List_storages[0].TotalSizeOfDrive - List_storages[0].TotalAvailableSpace) / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart1.Series = series1;
                 txtstorage1.Text = "Disco: " + List_storages[0].RootDirectory;
 
-                series2.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { List_storages[1].TotalAvailableSpace }, DataLabels = true, LabelPoint = labelPoint });
+                series2.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { Math.Round((List_storages[1].TotalAvailableSpace / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart2.Series = series2;
-                series2.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { (List_storages[1].TotalSizeOfDrive - List_storages[1].TotalAvailableSpace) }, DataLabels = true, LabelPoint = labelPoint });
+                series2.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { Math.Round(((List_storages[1].TotalSizeOfDrive - List_storages[1].TotalAvailableSpace) / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart2.Series = series2;
                 txtstorage2.Text = "Disco: " + List_storages[1].RootDirectory;
 
@@ -258,21 +258,21 @@ namespace SocketsClient
             }
             if (List_storages.Count() == 3)
             {
-                series1.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { List_storages[0].TotalAvailableSpace }, DataLabels = true, LabelPoint = labelPoint });
+                series1.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { Math.Round((List_storages[0].TotalAvailableSpace / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart1.Series = series1;
-                series1.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { (List_storages[0].TotalSizeOfDrive - List_storages[0].TotalAvailableSpace) }, DataLabels = true, LabelPoint = labelPoint });
+                series1.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { Math.Round(((List_storages[0].TotalSizeOfDrive - List_storages[0].TotalAvailableSpace) / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart1.Series = series1;
                 txtstorage1.Text = "Disco: " + List_storages[0].RootDirectory;
 
-                series2.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { List_storages[1].TotalAvailableSpace }, DataLabels = true, LabelPoint = labelPoint });
+                series2.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { Math.Round((List_storages[1].TotalAvailableSpace / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart2.Series = series2;
-                series2.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { (List_storages[1].TotalSizeOfDrive - List_storages[1].TotalAvailableSpace) }, DataLabels = true, LabelPoint = labelPoint });
+                series2.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { Math.Round(((List_storages[1].TotalSizeOfDrive - List_storages[1].TotalAvailableSpace) / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart2.Series = series2;
                 txtstorage2.Text = "Disco: " + List_storages[1].RootDirectory;
 
-                series3.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { List_storages[2].TotalAvailableSpace }, DataLabels = true, LabelPoint = labelPoint });
+                series3.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { Math.Round((List_storages[2].TotalAvailableSpace / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart3.Series = series3;
-                series3.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { (List_storages[2].TotalSizeOfDrive - List_storages[2].TotalAvailableSpace) }, DataLabels = true, LabelPoint = labelPoint });
+                series3.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { Math.Round(((List_storages[2].TotalSizeOfDrive - List_storages[2].TotalAvailableSpace) / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart3.Series = series3;
                 txtstorage3.Text = "Disco: " + List_storages[2].RootDirectory;
 
@@ -283,27 +283,27 @@ namespace SocketsClient
             }
             if (List_storages.Count() == 4)
             {
-                series1.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { List_storages[0].TotalAvailableSpace }, DataLabels = true, LabelPoint = labelPoint });
+                series1.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { Math.Round((List_storages[0].TotalAvailableSpace / gb), 2)  }, DataLabels = true, LabelPoint = labelPoint });
                 piechart1.Series = series1;
-                series1.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { (List_storages[0].TotalSizeOfDrive - List_storages[0].TotalAvailableSpace) }, DataLabels = true, LabelPoint = labelPoint });
+                series1.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { Math.Round(((List_storages[0].TotalSizeOfDrive - List_storages[0].TotalAvailableSpace) / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart1.Series = series1;
                 txtstorage1.Text = "Disco: " + List_storages[0].RootDirectory;
 
-                series2.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { List_storages[1].TotalAvailableSpace }, DataLabels = true, LabelPoint = labelPoint });
+                series2.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { Math.Round((List_storages[1].TotalAvailableSpace / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart2.Series = series2;
-                series2.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { (List_storages[1].TotalSizeOfDrive - List_storages[1].TotalAvailableSpace) }, DataLabels = true, LabelPoint = labelPoint });
+                series2.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { Math.Round(((List_storages[1].TotalSizeOfDrive - List_storages[1].TotalAvailableSpace) / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart2.Series = series2;
                 txtstorage2.Text = "Disco: " + List_storages[1].RootDirectory;
 
-                series3.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { List_storages[2].TotalAvailableSpace }, DataLabels = true, LabelPoint = labelPoint });
+                series3.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { Math.Round((List_storages[2].TotalAvailableSpace / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart3.Series = series3;
-                series3.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { (List_storages[2].TotalSizeOfDrive - List_storages[2].TotalAvailableSpace) }, DataLabels = true, LabelPoint = labelPoint });
+                series3.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { Math.Round(((List_storages[2].TotalSizeOfDrive - List_storages[2].TotalAvailableSpace) / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart3.Series = series3;
                 txtstorage3.Text = "Disco: " + List_storages[2].RootDirectory;
 
-                series4.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { List_storages[3].TotalAvailableSpace }, DataLabels = true, LabelPoint = labelPoint });
+                series4.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { Math.Round((List_storages[3].TotalAvailableSpace / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart4.Series = series4;
-                series4.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { (List_storages[3].TotalSizeOfDrive - List_storages[3].TotalAvailableSpace) }, DataLabels = true, LabelPoint = labelPoint });
+                series4.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { Math.Round(((List_storages[3].TotalSizeOfDrive - List_storages[3].TotalAvailableSpace) / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
                 piechart4.Series = series4;
                 txtstorage4.Text = "Disco: " + List_storages[3].RootDirectory;
 
@@ -318,12 +318,12 @@ namespace SocketsClient
         void Ram(MemoryRam ram) {
             cardram.Visibility = Visibility.Visible;
             list_storages.Clear();
-            list_storages.Add("Total Available Space");
-            list_storages.Add("Total used Space");
+            list_storages.Add("Total Available Ram GB");
+            list_storages.Add("Total used Ram GB");
             SeriesCollection series = new SeriesCollection();
-            series.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { ram.TotalFreeSpace }, DataLabels = true, LabelPoint = labelPoint });
+            series.Add(new PieSeries() { Title = list_storages[0], Values = new ChartValues<double> { Math.Round((ram.TotalFreeSpace / gb), 2)  }, DataLabels = true, LabelPoint = labelPoint });
             piechart_ram.Series = series;
-            series.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { (ram.TotalPhysicalMemory - ram.TotalFreeSpace) }, DataLabels = true, LabelPoint = labelPoint });
+            series.Add(new PieSeries() { Title = list_storages[1], Values = new ChartValues<double> { Math.Round(((ram.TotalPhysicalMemory - ram.TotalFreeSpace) / gb), 2) }, DataLabels = true, LabelPoint = labelPoint });
             piechart_ram.Series = series;
             txtram.Text = "Memory Ram: " ;
             txtphysicalram.Text = ram.TotalPhysicalMemory.ToString();
