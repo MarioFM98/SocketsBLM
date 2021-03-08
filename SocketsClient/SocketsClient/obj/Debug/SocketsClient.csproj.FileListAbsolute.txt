@@ -31,3 +31,33 @@ E:\SocketsClient\SocketsClient\obj\Debug\SocketsClient.pdb
 E:\SocketsClient\SocketsClient\bin\Debug\Newtonsoft.Json.dll
 E:\SocketsClient\SocketsClient\bin\Debug\Newtonsoft.Json.xml
 E:\SocketsClient\SocketsClient\obj\Debug\SocketsClient.csproj.CopyComplete
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\SocketsClient.exe.config
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\SocketsClient.exe
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\SocketsClient.pdb
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\LiveCharts.dll
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\LiveCharts.Wpf.dll
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\MaterialDesignColors.dll
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\Newtonsoft.Json.dll
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\LiveCharts.pdb
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\LiveCharts.xml
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\LiveCharts.Wpf.pdb
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\LiveCharts.Wpf.xml
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\MaterialDesignColors.pdb
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\Newtonsoft.Json.xml
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.csprojAssemblyReference.cache
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\MainWindow.g.cs
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\App.g.cs
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient_MarkupCompile.cache
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient_MarkupCompile.lref
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\MainWindow.baml
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.g.resources
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.Properties.Resources.resources
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.csproj.GenerateResource.cache
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.csproj.CoreCompileInputs.cache
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.csproj.CopyComplete
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.exe
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.pdb
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\App.baml

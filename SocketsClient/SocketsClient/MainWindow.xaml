@@ -3,24 +3,166 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
         xmlns:local="clr-namespace:SocketsClient"
         mc:Ignorable="d"
-        Title="Client" Height="450" Width="800" ContentRendered="Window_ContentRendered">
+        Title="Client" Height="700" Width="1500" ContentRendered="Window_ContentRendered" WindowStartupLocation="CenterScreen"  >
     <Grid>
-        <Label x:Name="lblConnectionStatus" Content="..." HorizontalAlignment="Left" Margin="143,10,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnSendRequest" Content="Enviar Request" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Width="100
+        <materialDesign:Card x:Name="card1" Visibility="Hidden"
+         materialDesign:ShadowAssist.ShadowDepth="Depth5"
+         Padding="32" Margin="20,302,1201,40" Background="White" >
+            <Grid HorizontalAlignment="Left" Height="321"  VerticalAlignment="Top" Width="266" Margin="-27,-37,-23,-21">
+                <TextBlock x:Name="txtstorage1" TextAlignment="Center"
+  Style="{StaticResource MaterialDesignBody1TextBlock}"
+  Text="" Margin="78,35,69,0" Height="35" Width="auto" VerticalAlignment="Top" FontWeight="bold" Foreground="White" Background="#FF494949" />
+                <lvc:PieChart Name="piechart1" Margin="33,56,40,10"/>
+            </Grid>
+        </materialDesign:Card>
+        <materialDesign:Card
+  Width="auto" Margin="0,0,0,404" Background="#F9424242">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition
+        Height="140" />
+                    <RowDefinition
+        Height="*" />
+                    <RowDefinition
+        Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image
+      Source="Resources/socketswhite.png" Margin="513,0,516,31" VerticalAlignment="Center" Height="109" />
+                <Button x:Name="btnSendRequests"
+  Style="{StaticResource MaterialDesignIconButton}"
+  
+  IsEnabled="False"
+  Background="#FF03A9F4" Margin="723,100,713,95" Height="Auto" Width="Auto" Foreground="White" BorderBrush="Gainsboro" Grid.RowSpan="2" Click="BtnSendRequests1_Click">
+                    <materialDesign:PackIcon
+    Kind="Play" Width="35" Height="35" />
+                </Button>
+                <StackPanel
+      Grid.Row="1"
+      Grid.Column="2"              
+      Margin="50 24 50 0"/>
+                <StackPanel
+      HorizontalAlignment="Right"
+      Grid.Row="2"
+      Orientation="Horizontal"
+      Margin="8">
+
+
+
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+        <Button x:Name="btnSendRequest" Visibility="Collapsed" Content="Enviar Request" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top" Width="100
                 " Click="btnSendRequest_Click" IsEnabled="False"/>
-        <Label Content="Estado de la conexión:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Respuesta:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblResponse" Content="..." HorizontalAlignment="Left" Margin="81,41,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cmbRequest" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,114,0,0">
-            <ComboBoxItem IsSelected="True">Toda la información</ComboBoxItem>
+        <ComboBox x:Name="cmbRequest" HorizontalAlignment="Center" VerticalAlignment="Top" Width="364" Margin="0,177,0,0" 
+                  Style="{StaticResource MaterialDesignFilledComboBox}"
+                    IsEnabled="{Binding Path=IsChecked, ElementName=FilledComboBoxEnabledCheckBox}"
+                    materialDesign:HintAssist.Hint="Seleccione la Petición"
+                    materialDesign:HintAssist.HelperTextFontSize="20"
+                    materialDesign:HintAssist.Foreground="DeepSkyBlue"
+                    
+                    materialDesign:TextFieldAssist.UnderlineBrush="DeepSkyBlue" Foreground="White" FontSize="15">
+            <ComboBoxItem >Toda la información</ComboBoxItem>
             <ComboBoxItem>Información de las tarjetas gráficas</ComboBoxItem>
             <ComboBoxItem>Información de las unidades de almacenamiento</ComboBoxItem>
             <ComboBoxItem>Información de la memoria RAM</ComboBoxItem>
             <ComboBoxItem>Desconectar</ComboBoxItem>
         </ComboBox>
-        <Label Content="Seleccione la petición:" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top"/>
+        <GroupBox Header="" HorizontalAlignment="Left" Height="130" Margin="10,10,0,0" VerticalAlignment="Top" Width="225" Foreground="White" BorderBrush="White" Background="{x:Null}">
+            <Grid Height="79" VerticalAlignment="Top" Width="207" Margin="0,0,0,-1">
+                <Label x:Name="lblConnectionStatus" Content="..." HorizontalAlignment="Left" Margin="133,1,0,0" VerticalAlignment="Top"/>
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="2,5,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" >Estado de la conexión:</TextBlock>
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="2,36,0,0" VerticalAlignment="Top">Respuesta:</TextBlock>
+                <Label x:Name="lblResponse" Content="..." HorizontalAlignment="Left" Margin="75,32,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+        <TextBox x:Name="txtjson" HorizontalAlignment="Left" Height="326" Margin="1220,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262"/>
+        <materialDesign:Card x:Name="card2" Visibility="Hidden"
+            materialDesign:ShadowAssist.ShadowDepth="Depth5"
+            Padding="32" Margin="317,302,904,40" Background="White" >
+            <Grid HorizontalAlignment="Left" Height="321"  VerticalAlignment="Top" Width="266" Margin="-27,-37,-23,-21">
+                <TextBlock x:Name="txtstorage2" TextAlignment="Center"
+                    Style="{StaticResource MaterialDesignBody1TextBlock}"
+                    Text="" Margin="78,35,69,0" Height="35" Width="auto" VerticalAlignment="Top" FontWeight="bold" Foreground="White" Background="#FF494949" />
+                <lvc:PieChart x:Name="piechart2" Margin="33,56,40,10"/>
+            </Grid>
+        </materialDesign:Card>
+        <materialDesign:Card x:Name="card3" Visibility="Hidden"
+            materialDesign:ShadowAssist.ShadowDepth="Depth5"
+            Padding="32" Margin="617,302,604,41" Background="White" >
+            <Grid HorizontalAlignment="Left" Height="321"  VerticalAlignment="Top" Width="266" Margin="-27,-37,-23,-21">
+                <TextBlock x:Name="txtstorage3" TextAlignment="Center"
+                    Style="{StaticResource MaterialDesignBody1TextBlock}"
+                    Text="" Margin="78,35,69,0" Height="35" Width="auto" VerticalAlignment="Top" FontWeight="bold" Foreground="White" Background="#FF494949" />
+                <lvc:PieChart x:Name="piechart3" Margin="33,56,40,10"/>
+            </Grid>
+        </materialDesign:Card>
+        <materialDesign:Card x:Name="card4" Visibility="Hidden"
+            materialDesign:ShadowAssist.ShadowDepth="Depth5"
+            Padding="32" Margin="914,302,310,40" Background="White" >
+            <Grid HorizontalAlignment="Left" Height="321"  VerticalAlignment="Top" Width="266" Margin="-27,-37,-23,-21">
+                <TextBlock x:Name="txtstorage4" TextAlignment="Center"
+                    Style="{StaticResource MaterialDesignBody1TextBlock}"
+                    Text="" Margin="78,35,69,0" Height="35" Width="auto" VerticalAlignment="Top" FontWeight="bold" Foreground="White" Background="#FF494949" />
+                <lvc:PieChart x:Name="piechart4" Margin="33,56,40,10"/>
+            </Grid>
+        </materialDesign:Card>
+        <materialDesign:Card x:Name="cardram" Visibility="Hidden"
+            materialDesign:ShadowAssist.ShadowDepth="Depth5"
+            Padding="32" Margin="564,302,446,39" Background="White" >
+            <Grid HorizontalAlignment="Left" Height="321"  VerticalAlignment="Top" Width="466" Margin="-27,-37,-21,-20">
+                <TextBlock x:Name="txtram" TextAlignment="Center"
+                    Style="{StaticResource MaterialDesignBody1TextBlock}"
+                    Text="" Margin="78,35,69,0" Height="35" Width="auto" VerticalAlignment="Top" FontWeight="bold" Foreground="White" Background="#FF494949" />
+                <lvc:PieChart x:Name="piechart_ram" Margin="22,56,228,10"/>
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="267,128,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" >Total Free Space</TextBlock>
 
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="267,199,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" >Total Physical Memory</TextBlock>
+                <TextBlock x:Name="txtspaceram"   HorizontalAlignment="Left" Margin="267,144,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" ></TextBlock>
+                <TextBlock x:Name="txtphysicalram"   HorizontalAlignment="Left" Margin="267,215,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" ></TextBlock>
+            </Grid>
+        </materialDesign:Card>
+
+        <materialDesign:Card x:Name="card_video1" Visibility="Hidden"
+            materialDesign:ShadowAssist.ShadowDepth="Depth5"
+            Padding="32" Margin="267,300,829,41" Background="White" >
+            <Grid HorizontalAlignment="Left" Height="321"  VerticalAlignment="Top" Width="383" Margin="-27,-37,-24,-20">
+                <TextBlock x:Name="txtgrafic1" TextAlignment="Center"
+                    Style="{StaticResource MaterialDesignBody1TextBlock}"
+                    Text="" Margin="39,35,49,0" Height="35" Width="auto" VerticalAlignment="Top" FontWeight="bold" Foreground="White" Background="#FF494949" />
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="26,100,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" >Name</TextBlock>
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="212,100,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-0.457,-1.562" >Status</TextBlock>
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="26,184,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-0.016,0.812" >Adapter RAM</TextBlock>
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="148,255,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" >Driver Version</TextBlock>
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="212,184,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" >Adapter DAC Type</TextBlock>
+                <TextBlock x:Name="txtresname"   HorizontalAlignment="Left" Margin="26,121,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-0.455,0.062" ></TextBlock>
+                <TextBlock x:Name="txtresstatus"   HorizontalAlignment="Left" Margin="212,121,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-1,-2.562" ></TextBlock>
+                <TextBlock x:Name="txtresAdapter"   HorizontalAlignment="Left" Margin="26,205,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-0.455,0.062" ></TextBlock>
+                <TextBlock x:Name="txtresAdapterDAC"   HorizontalAlignment="Left" Margin="212,208,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-1,-2.562" ></TextBlock>
+                <TextBlock x:Name="txtresDriver"   HorizontalAlignment="Left" Margin="148,276,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-1,-2.562" ></TextBlock>
+            </Grid>
+        </materialDesign:Card>
+        <materialDesign:Card x:Name="card_video2" Visibility="Hidden"
+            materialDesign:ShadowAssist.ShadowDepth="Depth5"
+            Padding="32" Margin="743,300,353,41" Background="White" >
+            <Grid HorizontalAlignment="Left" Height="321"  VerticalAlignment="Top" Width="383" Margin="-27,-37,-24,-20">
+                <TextBlock x:Name="txtgrafic2" TextAlignment="Center"
+                    Style="{StaticResource MaterialDesignBody1TextBlock}"
+                    Text="" Margin="39,35,49,0" Height="35" Width="auto" VerticalAlignment="Top" FontWeight="bold" Foreground="White" Background="#FF494949" />
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="26,100,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" ><Run Text="Name"/></TextBlock>
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="212,100,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-0.457,-1.562" ><Run Text="Status"/></TextBlock>
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="26,184,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-0.016,0.812" ><Run Text="Adapter RAM"/></TextBlock>
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="148,255,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" ><Run Text="Driver Version"/></TextBlock>
+                <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="212,184,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" ><Run Text="Adapter DAC Type"/></TextBlock>
+                <TextBlock x:Name="txtresname1"   HorizontalAlignment="Left" Margin="26,121,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-0.455,0.062" />
+                <TextBlock x:Name="txtresstatus1"   HorizontalAlignment="Left" Margin="212,121,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-1,-2.562" />
+                <TextBlock x:Name="txtresAdapter1"   HorizontalAlignment="Left" Margin="26,205,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-0.455,0.062" />
+                <TextBlock x:Name="txtresAdapterDAC1"   HorizontalAlignment="Left" Margin="212,208,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-1,-2.562" />
+                <TextBlock x:Name="txtresDriver1"   HorizontalAlignment="Left" Margin="148,276,0,0" VerticalAlignment="Top" Foreground="#DD5A5F64" RenderTransformOrigin="-1,-2.562" />
+            </Grid>
+        </materialDesign:Card>
     </Grid>
 </Window>

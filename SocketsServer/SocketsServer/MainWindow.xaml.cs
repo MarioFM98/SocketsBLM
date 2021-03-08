@@ -38,7 +38,7 @@ namespace SocketsServer
             Console.WriteLine("Levantando Servidor...");
             lblServerStatus.Content = "Levantando Servidor...";
 
-            serverSocket.Bind(new IPEndPoint(IPAddress.Any, PORT));
+            serverSocket.Bind(new IPEndPoint(IPAddress.Parse("127.0.0.1"), PORT));
             serverSocket.Listen(0);
             serverSocket.BeginAccept(AcceptCallback, null);
 

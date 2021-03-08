@@ -31,3 +31,21 @@ E:\SocketsServer\SocketsServer\obj\Debug\SocketsServer.csproj.CoreCompileInputs.
 E:\SocketsServer\SocketsServer\obj\Debug\SocketsServer.csproj.CopyComplete
 E:\SocketsServer\SocketsServer\obj\Debug\SocketsServer.exe
 E:\SocketsServer\SocketsServer\obj\Debug\SocketsServer.pdb
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\bin\Debug\SocketsServer.exe.config
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\bin\Debug\SocketsServer.exe
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\bin\Debug\SocketsServer.pdb
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\bin\Debug\Newtonsoft.Json.dll
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\bin\Debug\Newtonsoft.Json.xml
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.csprojAssemblyReference.cache
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\MainWindow.g.cs
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\App.g.cs
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer_MarkupCompile.cache
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer_MarkupCompile.lref
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\MainWindow.baml
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.g.resources
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.Properties.Resources.resources
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.csproj.GenerateResource.cache
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.csproj.CoreCompileInputs.cache
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.csproj.CopyComplete
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.exe
+E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.pdb
