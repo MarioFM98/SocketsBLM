@@ -1,0 +1,26 @@
+﻿<Window x:Class="SocketsClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SocketsClient"
+        mc:Ignorable="d"
+        Title="Client" Height="450" Width="800" ContentRendered="Window_ContentRendered">
+    <Grid>
+        <Label x:Name="lblConnectionStatus" Content="..." HorizontalAlignment="Left" Margin="143,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSendRequest" Content="Enviar Request" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Width="100
+                " Click="btnSendRequest_Click" IsEnabled="False"/>
+        <Label Content="Estado de la conexión:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Respuesta:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblResponse" Content="..." HorizontalAlignment="Left" Margin="81,41,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbRequest" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,114,0,0">
+            <ComboBoxItem IsSelected="True">Toda la información</ComboBoxItem>
+            <ComboBoxItem>Información de las tarjetas gráficas</ComboBoxItem>
+            <ComboBoxItem>Información de las unidades de almacenamiento</ComboBoxItem>
+            <ComboBoxItem>Información de la memoria RAM</ComboBoxItem>
+            <ComboBoxItem>Desconectar</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Seleccione la petición:" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
