@@ -49,3 +49,21 @@ E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBL
 E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.csproj.CopyComplete
 E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.exe
 E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.pdb
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\bin\Debug\SocketsServer.exe.config
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\bin\Debug\SocketsServer.exe
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\bin\Debug\SocketsServer.pdb
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\bin\Debug\Newtonsoft.Json.dll
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\bin\Debug\Newtonsoft.Json.xml
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.csprojAssemblyReference.cache
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\MainWindow.g.cs
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\App.g.cs
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer_MarkupCompile.cache
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer_MarkupCompile.lref
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\MainWindow.baml
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.g.resources
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.Properties.Resources.resources
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.csproj.GenerateResource.cache
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.csproj.CoreCompileInputs.cache
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.csproj.CopyComplete
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.exe
+D:\Descargas\SocketsBLM\SocketsServer\SocketsServer\obj\Debug\SocketsServer.pdb

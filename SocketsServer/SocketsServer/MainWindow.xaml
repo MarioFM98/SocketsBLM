@@ -5,12 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SocketsServer"
         mc:Ignorable="d"
-        Title="Server" Height="450" Width="800">
+        Title="Server" Height="176" Width="444">
     <Grid>
-        <Label x:Name="lblServerStatus" Content="Conectando..." HorizontalAlignment="Left" Margin="96,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Server Status:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Received:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblReceived" Content="..." HorizontalAlignment="Left" Margin="96,41,0,0" VerticalAlignment="Top"/>
+        <GroupBox Header="Configuración" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="150" Margin="10,10,0,0">
+            <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="140
+                  " Margin="0,0,0,0">
+                <Label Content="Ingrese la IP:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtIp" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <Button x:Name="btnSetUpServer" Content="Levantar Servidor" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="120" Click="btnSetUpServer_Click"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Información" HorizontalAlignment="Left" Height="110" VerticalAlignment="Top" Width="228" Margin="195,10,0,0">
+            <Grid HorizontalAlignment="Left" Height="80               " Margin="4,3,0,0" VerticalAlignment="Top" Width="200">
+                <Label x:Name="lblServerStatus" Content="Desconectado" HorizontalAlignment="Left" Margin="100,10,0,0" VerticalAlignment="Top"/>
+                <Label Content="Server Status:" HorizontalAlignment="Left" Margin="14,10,0,0" VerticalAlignment="Top"/>
+                <Label Content="Received:" HorizontalAlignment="Left" Margin="14,41,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="lblReceived" Content="..." HorizontalAlignment="Left" Margin="100,41,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
 
     </Grid>
 </Window>

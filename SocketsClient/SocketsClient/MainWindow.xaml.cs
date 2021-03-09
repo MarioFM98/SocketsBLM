@@ -24,6 +24,7 @@ namespace SocketsClient
         private bool connected = false;
 
         private const int PORT = 100;
+        private string IP = "192.168.0.13";
         double gb = 1073741824;
 
         public MainWindow()
@@ -34,7 +35,7 @@ namespace SocketsClient
 
         private void Window_ContentRendered(object sender, EventArgs e)
         {
-            ConnectToServer();
+            //ConnectToServer();
         }
 
 
@@ -51,7 +52,7 @@ namespace SocketsClient
                 {
                     attempts++;
                     Console.WriteLine("Intento de conexion: " + attempts);
-                    ClientSocket.Connect(IPAddress.Parse("127.0.0.1"), PORT);
+                    ClientSocket.Connect(IPAddress.Parse(IP), PORT);
                 }
                 catch (SocketException)
                 {
@@ -329,7 +330,7 @@ namespace SocketsClient
             txtphysicalram.Text = ram.TotalPhysicalMemory.ToString();
             txtspaceram.Text = ram.TotalFreeSpace.ToString();
         }
-        private void BtnSendRequests1_Click(object sender, RoutedEventArgs e)
+        private void BtnSendRequests_Click(object sender, RoutedEventArgs e)
         {
             int index = cmbRequest.SelectedIndex;
             string request = "";
@@ -387,6 +388,14 @@ namespace SocketsClient
             txtresAdapter1.Text = string.Empty;
             txtresAdapterDAC1.Text = string.Empty;
             txtresDriver1.Text = string.Empty;
+        }
+
+        private void btnConnectToServer_Click(object sender, RoutedEventArgs e)
+        {
+            IP = txtIp.Text;
+            ConnectToServer();
+            btnConnectToServer.IsEnabled = false;
+            txtIp.IsEnabled = false;
         }
     }
 }

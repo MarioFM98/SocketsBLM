@@ -32,14 +32,15 @@
                 </Grid.RowDefinitions>
                 <Image
       Source="Resources/socketswhite.png" Margin="513,0,516,31" VerticalAlignment="Center" Height="109" />
-                <Button x:Name="btnSendRequests"
+                <!--<Button x:Name="btnSendRequests"
   Style="{StaticResource MaterialDesignIconButton}"
   
   IsEnabled="False"
   Background="#FF03A9F4" Margin="723,100,713,95" Height="Auto" Width="Auto" Foreground="White" BorderBrush="Gainsboro" Grid.RowSpan="2" Click="BtnSendRequests1_Click">
                     <materialDesign:PackIcon
     Kind="Play" Width="35" Height="35" />
-                </Button>
+                </Button>-->
+
                 <StackPanel
       Grid.Row="1"
       Grid.Column="2"              
@@ -53,6 +54,7 @@
 
 
                 </StackPanel>
+                <Button x:Name="btnSendRequests" Content="Enviar Petición" HorizontalAlignment="Center" Margin="0,120,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="150" IsEnabled="False" Click="BtnSendRequests_Click"/>
             </Grid>
         </materialDesign:Card>
         <Button x:Name="btnSendRequest" Visibility="Collapsed" Content="Enviar Request" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top" Width="100
@@ -71,12 +73,19 @@
             <ComboBoxItem>Información de la memoria RAM</ComboBoxItem>
             <ComboBoxItem>Desconectar</ComboBoxItem>
         </ComboBox>
-        <GroupBox Header="" HorizontalAlignment="Left" Height="130" Margin="10,10,0,0" VerticalAlignment="Top" Width="225" Foreground="White" BorderBrush="White" Background="{x:Null}">
+        <GroupBox Header="Información" HorizontalAlignment="Left" Height="130" Margin="234,10,0,0" VerticalAlignment="Top" Width="225" Foreground="White" BorderBrush="White" Background="{x:Null}">
             <Grid Height="79" VerticalAlignment="Top" Width="207" Margin="0,0,0,-1">
                 <Label x:Name="lblConnectionStatus" Content="..." HorizontalAlignment="Left" Margin="133,1,0,0" VerticalAlignment="Top"/>
                 <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="2,5,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" >Estado de la conexión:</TextBlock>
                 <TextBlock  FontWeight="Bold" HorizontalAlignment="Left" Margin="2,36,0,0" VerticalAlignment="Top">Respuesta:</TextBlock>
                 <Label x:Name="lblResponse" Content="..." HorizontalAlignment="Left" Margin="75,32,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Configuración" HorizontalAlignment="Left" Height="162" VerticalAlignment="Top" Width="200" Margin="10,10,0,0">
+            <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="190" Margin="0,0,0,0">
+                <Label Content="Ingrese la IP:" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtIp" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+                <Button x:Name="btnConnectToServer" Content="Conectar a Servidor" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="170" Click="btnConnectToServer_Click"/>
             </Grid>
         </GroupBox>
         <TextBox x:Name="txtjson" HorizontalAlignment="Left" Height="326" Margin="1220,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262"/>

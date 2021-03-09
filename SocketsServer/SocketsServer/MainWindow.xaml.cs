@@ -23,13 +23,13 @@ namespace SocketsServer
         private readonly List<Socket> clientSockets = new List<Socket>();
         private const int BUFFER_SIZE = 2048;
         private const int PORT = 100;
+        private string IP = "192.168.0.13";
         private readonly byte[] buffer = new byte[BUFFER_SIZE];
 
 
         public MainWindow()
         {
             InitializeComponent();
-            SetupServer();
         }
 
 
@@ -38,7 +38,7 @@ namespace SocketsServer
             Console.WriteLine("Levantando Servidor...");
             lblServerStatus.Content = "Levantando Servidor...";
 
-            serverSocket.Bind(new IPEndPoint(IPAddress.Parse("127.0.0.1"), PORT));
+            serverSocket.Bind(new IPEndPoint(IPAddress.Parse(IP), PORT));
             serverSocket.Listen(0);
             serverSocket.BeginAccept(AcceptCallback, null);
 
@@ -231,5 +231,14 @@ namespace SocketsServer
             current.BeginReceive(buffer, 0, BUFFER_SIZE, SocketFlags.None, ReceiveCallback, current);
         }
         #endregion
+
+
+        private void btnSetUpServer_Click(object sender, RoutedEventArgs e)
+        {
+            IP = txtIp.Text;
+            SetupServer();
+            btnSetUpServer.IsEnabled = false;
+            txtIp.IsEnabled = false;
+        }
     }
 }

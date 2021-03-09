@@ -61,3 +61,33 @@ E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBL
 E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.exe
 E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.pdb
 E:\UNIVERSIDAD\SEMESTRE7\SISTEMAS DISTRIBUIDOS\GITHUB_PROYECTS\SOCKETS\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\App.baml
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\SocketsClient.exe.config
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\SocketsClient.exe
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\SocketsClient.pdb
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\LiveCharts.dll
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\LiveCharts.Wpf.dll
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\MaterialDesignColors.dll
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\Newtonsoft.Json.dll
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\LiveCharts.pdb
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\LiveCharts.xml
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\LiveCharts.Wpf.pdb
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\LiveCharts.Wpf.xml
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\MaterialDesignColors.pdb
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\bin\Debug\Newtonsoft.Json.xml
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.csprojAssemblyReference.cache
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\MainWindow.g.cs
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\App.g.cs
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient_MarkupCompile.cache
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient_MarkupCompile.lref
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\App.baml
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\MainWindow.baml
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.g.resources
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.Properties.Resources.resources
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.csproj.GenerateResource.cache
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.csproj.CoreCompileInputs.cache
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.csproj.CopyComplete
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.exe
+D:\Descargas\SocketsBLM\SocketsClient\SocketsClient\obj\Debug\SocketsClient.pdb
